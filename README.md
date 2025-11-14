@@ -62,3 +62,13 @@ Nutrition_Fitness_Analytics/
 └── README.md
 ```
 
+
+## 🧪 Data Sources (Example Schema)
+
+| Column              | Description                        |
+| ------------------- | ---------------------------------- |
+| date                | Entry date                         |
+| food_item           | Logged meal/snack                  |
+| calories            | Total calories                     |
+| protein, carbs, fat | Macronutrient breakdown            |
+| meal_type           | Breakfast / Lunch / Dinner / Snack |
