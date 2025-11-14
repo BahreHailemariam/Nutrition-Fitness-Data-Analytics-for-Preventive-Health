@@ -78,3 +78,36 @@ DIVIDE(
 
 AvgDailySteps = AVERAGE(Activity[steps])
 ```
+
+## 2️⃣ Nutrition Insights
+
+**Goal:** Understand calorie intake, macro balance, and high-impact foods.
+
+**KPIs:**
+
+- **Avg Daily Calories (per user)**
+
+- **Macro Balance (Protein %, Carb %, Fat %)**
+
+- **Top High-Calorie Foods** (by average calories)
+
+**Visuals:**
+
+- Stacked area: Daily calories (in vs burned) per cohort.
+
+- Treemap: Top food items by calories or frequency.
+
+- Bar chart: Macro composition by meal_type.
+
+- Table: Users with highest net calorie surplus.
+
+**DAX Examples:**
+```DAX
+
+DailyCalories = SUM(Nutrition[calories])
+
+NetCalories = SUM(Features[net_calories])
+
+ProteinPct = DIVIDE(SUM(Nutrition[protein]), SUM(Nutrition[protein] + Nutrition[carbs] + Nutrition[fat]))
+
+```
