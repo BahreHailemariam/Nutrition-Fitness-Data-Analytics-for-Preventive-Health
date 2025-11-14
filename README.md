@@ -275,3 +275,33 @@ WellnessScore =
 0.2 * [NutritionScore] +
 0.1 * [StressInverseScore]
 ```
+## ▶️ How to Run the Project
+
+**1. Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
+**2. Preprocess Data**
+```bash
+python scripts/load_data.py  
+python scripts/clean_data.py  
+python scripts/feature_engineering.py
+```
+**3. Train ML Model
+```bash
+python scripts/train_model.py
+```
+**4. Launch Streamlit Dashboard**
+```bash
+streamlit run scripts/app.py
+```
+## 🚀 Future Enhancements
+
+- Integrate smart-watch API data (Fitbit, Garmin, Apple Health)
+
+- Add macronutrient recommendation engine
+
+- Build reinforcement-learning-based habit coaching
+
+- Add NLP for analyzing textual journal entries
+
