@@ -196,3 +196,58 @@ Power BI dashboard pages:
 - Streamlit monitoring dashboard
 
 - Automated pipelines using cron / Airflow 
+
+## 📊 Power BI Dashboard Preview
+### Pages Included
+**1. Overview**
+
+- Wellness score
+
+- Steps vs sleep vs calories overview
+
+- Weight trend
+
+- Stress level trend
+
+**2. Nutrition Insights**
+
+- Calories by meal type
+
+- Macro distribution
+
+- Weekly calorie trends
+
+- High-calorie food drivers
+
+**3. Fitness Activity**
+
+- Workout frequency & intensity
+
+- Steps trend
+
+- Calories burned analysis
+
+- Workout category comparison
+
+**4. Sleep & Recovery**
+
+- Sleep quality trend
+
+- Heart rate & stress correlation
+
+- Recovery score (HRV proxy)
+
+**5. Health Risk Modeling**
+
+- Predicted risk categories
+
+- Feature importance (model insights)
+
+- Comparison with ground truth factors
+
+**6. Weekly Wellness Scorecard**
+
+- Combined KPIs
+
+- Personalized recommendations
+
