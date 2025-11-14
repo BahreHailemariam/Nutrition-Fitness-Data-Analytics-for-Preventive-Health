@@ -146,3 +146,32 @@ DIVIDE(
   DISTINCTCOUNT(Date[week])
 )
 ```
+
+## 4️⃣ Sleep & Recovery
+
+**Goal:** Monitor sleep patterns, correlate sleep to wellness and risk.
+
+**KPIs:**
+
+- **Avg Sleep Hours**
+
+- **Avg Sleep Score** (derived)
+
+- **Resting HR trend**
+
+**Visuals:**
+
+- Line chart: Sleep hours trend (user or cohort).
+
+- Box plot: Sleep distribution across users.
+
+- Correlation matrix: Sleep Score vs Wellness Score vs Steps.
+
+**DAX Examples:**
+```DAX
+
+AvgSleepHours = AVERAGE(Sleep[sleep_hours])
+
+AvgSleepScore = AVERAGE(Features[sleep_score])
+
+```
