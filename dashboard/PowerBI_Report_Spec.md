@@ -201,3 +201,30 @@ AvgFatigueProb = AVERAGE(ModelPredictions[fatigue_probability])
 FatigueRiskCount = COUNTROWS(FILTER(ModelPredictions, ModelPredictions[fatigue_probability] >= 0.7))
 
 ```
+
+**Notes:** Compute SHAP or feature contributions offline and save to a `ModelExplainer` table for in-report visualizations.
+
+## 6️⃣ Weekly Wellness Scorecard
+
+**Goal:** Compact weekly summary for coaches and users.
+
+**KPIs & Visuals:**
+
+- Weekly Avg Wellness Score (trend line)
+
+- Weekly Steps, Sleep, Net Calories (bar or line)
+
+- User scorecard with suggestions (Power BI conditional text or button linking to recommendations)
+
+- Table: Top improvement recommendations per user (precomputed rules)
+
+**DAX Examples:**
+```DAX
+
+WeeklyWellness = 
+AVERAGEX(
+  VALUES(Date[week]),
+  CALCULATE(AVERAGE(Features[wellness_score]))
+)
+
+```
