@@ -108,4 +108,91 @@ Nutrition_Fitness_Analytics/
 
 - **Plotly** → Interactive wellness visualizations
 
-  
+ ## ⚙️ Workflow Summary
+**1. Data Ingestion**
+
+- Load nutrition logs, workout logs, biometrics, and sleep patterns
+
+- Validate file structure & unify timestamps
+
+**2. Data Cleaning**
+
+- Fix missing calories/macros
+
+- Normalize inconsistent units
+
+- Remove duplicate entries
+
+- Compute derived data (e.g., calories burned ratios)
+
+**3. Feature Engineering**
+
+- Daily & weekly aggregated metrics
+
+- Macro breakdown ratios
+
+- Workout intensity scores
+
+- Sleep recovery score
+
+- Stress score normalization
+
+- Health Risk Index (HRI)
+
+**4. Predictive Modeling**
+
+ML algorithms:
+
+- Logistic Regression
+
+- Random Forest
+
+- XGBoost (optional)
+
+Predictions:
+
+- Stress Risk Level
+
+- Obesity Risk
+
+- Fatigue / Low Energy Detection
+
+- Overtraining Indicator
+
+**5. Analytics & KPIs**
+
+Calculated metrics:
+
+- Net Calories (Calories In – Out)
+
+- Macro Ratio Balance
+
+- Workout Frequency Score
+
+- Sleep Consistency Score
+
+- Weekly Stress Index
+
+- Hydration Consistency (if included)
+
+**6. Visualization**
+
+Power BI dashboard pages:
+
+- Overview
+
+- Nutrition Patterns
+
+- Fitness Activity
+
+- Health Risk Modeling
+
+- Sleep & Recovery
+
+- Weekly Wellness Scorecard
+
+**7. Deployment (Optional)**
+
+- Streamlit monitoring dashboard
+
+- Automated pipelines using cron / Airflow 
