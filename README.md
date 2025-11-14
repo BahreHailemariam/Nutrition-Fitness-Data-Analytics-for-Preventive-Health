@@ -64,6 +64,7 @@ Nutrition_Fitness_Analytics/
 
 
 ## 🧪 Data Sources (Example Schema)
+**Nutrition Logs**
 
 | Column              | Description                        |
 | ------------------- | ---------------------------------- |
@@ -72,3 +73,19 @@ Nutrition_Fitness_Analytics/
 | calories            | Total calories                     |
 | protein, carbs, fat | Macronutrient breakdown            |
 | meal_type           | Breakfast / Lunch / Dinner / Snack |
+
+**Fitness Logs**
+
+| Column | Description | <br />
+| steps | Daily step count | <br />
+| workout_type | Cardio / Strength / Yoga / HIIT | <br />
+| duration_min | Workout duration |<br />
+| calories_burned | Estimated burn |
+
+**Sleep + Biometrics**
+
+| sleep_hours | Nighttime sleep |<br />
+| heart_rate | Resting heart rate | <br />
+| stress_level | Self-reported scale (0–10) | <br />
+| weight | Daily/weekly weight logs |
+
