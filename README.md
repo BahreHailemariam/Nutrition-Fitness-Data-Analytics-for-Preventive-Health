@@ -251,3 +251,27 @@ Power BI dashboard pages:
 
 - Personalized recommendations
 
+## 🧮 Sample DAX Measures
+**Weekly Calories**
+
+```DAX
+WeeklyCalories = SUMX(VALUES(Date[Week]), CALCULATE(SUM(Nutrition[calories])))
+```
+**Macro Ratio – Protein %**
+
+
+```DAX
+ProteinPct = 
+DIVIDE(SUM(Nutrition[protein]), 
+       SUM(Nutrition[protein]) + SUM(Nutrition[carbs]) + SUM(Nutrition[fat]))
+```
+
+**Wellness Score**
+
+```DAX
+WellnessScore =
+0.4 * [SleepScore] +
+0.3 * [FitnessScore] +
+0.2 * [NutritionScore] +
+0.1 * [StressInverseScore]
+```
