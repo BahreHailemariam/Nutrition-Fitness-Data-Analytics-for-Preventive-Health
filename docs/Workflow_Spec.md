@@ -12,3 +12,17 @@ The workflow is designed to support: <br />
 ## 📌 1. Architecture Overview
 
 **Data Sources → ETL Pipeline → Feature Store → ML Modeling → Analytics Layer → Dashboards**
+
+Mobile App / Wearables / Logs
+      ↓
+Raw Storage (CSV/JSON/Parquet)
+      ↓
+Python ETL (Cleaning + Feature Engineering)
+      ↓
+Processed Warehouse Tables (SQLite / DuckDB / BigQuery)
+      ↓
+ML Models (RandomForest, LogisticRegression)
+      ↓
+Analytics Metrics + Predictions Tables
+      ↓
+Power BI / Streamlit Dashboards
