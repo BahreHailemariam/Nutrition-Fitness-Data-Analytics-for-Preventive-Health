@@ -32,3 +32,33 @@ This project is suitable for:
 ✔ Build visual dashboards for personal and population-level preventive health<br />
 ✔ Develop ML models that predict health risk categories<br />
 ✔ Provide actionable lifestyle recommendations
+
+## 📂 Folder Structure
+```
+Nutrition_Fitness_Analytics/
+│
+├── data/
+│   ├── raw/                # Raw logs (food intake, workouts, steps, biometrics)
+│   └── processed/          # Cleaned datasets ready for modeling
+│
+├── scripts/
+│   ├── load_data.py        # Load CSV/JSON data and validate structure
+│   ├── clean_data.py       # Handle missing nutrition/activity fields
+│   ├── feature_engineering.py  # Compute calories, macros, sleep score, etc.
+│   ├── train_model.py      # ML model training for health risk prediction
+│   ├── analytics_metrics.py # Wellness scoring, correlations, pattern detection
+│   └── app.py              # Streamlit-based fitness + nutrition monitoring app
+│
+├── dashboard/
+│   └── PowerBI_Report_Spec.md  # Full Power BI specification
+│
+├── docs/
+│   └── Workflow_Spec.md    # Detailed ETL + ML workflow
+│
+├── models/
+│   └── health_risk_model.pkl
+│
+├── requirements.txt
+└── README.md
+```
+
