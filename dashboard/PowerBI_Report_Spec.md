@@ -267,3 +267,18 @@ DIVIDE(
 
 - Prefer numeric surrogate keys for joins; avoid text-only joins in visuals.
 
+## ♻️ Refresh & Performance
+
+- **Recommended refresh cadence:** Daily for historical pipelines; near-real-time (hourly) if feeding from streaming sources. For demo/local, schedule every 15–60 minutes.
+
+- **DirectQuery vs Import:** Import for smaller datasets for best performance. Use DirectQuery for very large datasets or when using a dedicated warehouse (BigQuery / Snowflake).
+
+- **Performance tips:**
+
+     - Use pre-aggregated tables for visuals that span long time windows.
+
+     - Limit top N visuals and use slicers to reduce cardinality.
+
+     - Optimize DAX measures (prefer measures over calculated columns when dynamic).
+
+  
