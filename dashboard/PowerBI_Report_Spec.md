@@ -318,3 +318,23 @@ DIVIDE(
 - **Integration:** Power Automate → send alerts/notifications to coach or user when risk thresholds are met.
 
 - **Embedded Analytics:** Use Power BI Embedded for in-app dashboards (if product integrates with a mobile app).
+
+
+## ✅ Implementation Checklist
+
+ - Confirm source table/field names and types.
+
+ - Create Date and User dimension tables.
+
+ - Build Power Query transformations to import and clean tables reliably.
+
+ - Precompute daily metrics table where appropriate.
+
+ - Implement DAX measures and validate against SQL.
+
+ - Configure scheduled refresh (Power BI Service) and data-driven alerts.
+
+ - Implement RLS for user-based data security.
+
+ - Publish and test mobile layout and bookmarks.
+
