@@ -291,7 +291,7 @@ DIVIDE(
 
 ## 🧩 UX & Interaction Guidelines
 
-- Global filter bar: Date Range, User, Cohort, MealType, WorkoutType.
+- Global filter bar: `Date Range`, `User`, `Cohort`, `MealType`, `WorkoutType`.
 
 - Drill-through: Allow drill-through from weekly summary to daily entries and to individual raw reviews/notes.
 
@@ -299,4 +299,22 @@ DIVIDE(
 
 - Mobile layout: a condensed card-only page (Wellness Score + Top 3 KPIs).
 
-  
+ ## 🧪 Validation & QA
+
+- Validate DAX measures with SQL queries against the source tables.
+
+- Unit-test sample measures with known labels (e.g., user with static values).
+
+- Verify model predictions by comparing Power BI aggregates to an offline test harness CSV. 
+
+## ⚙️ Optional Advanced Extensions
+
+- **Forecasting:** Add short-term forecasting (Prophet / Azure ML) for weight and wellness trends.
+
+- **Anomaly Detection:** Use rolling z-score or ML anomaly detection and surface results in Alerts page.
+
+- **Personalized Recommendations:** Embed precomputed suggestions (nutrition/workout changes) and surface them in the Weekly Scorecard.
+
+- **Integration:** Power Automate → send alerts/notifications to coach or user when risk thresholds are met.
+
+- **Embedded Analytics:** Use Power BI Embedded for in-app dashboards (if product integrates with a mobile app).
