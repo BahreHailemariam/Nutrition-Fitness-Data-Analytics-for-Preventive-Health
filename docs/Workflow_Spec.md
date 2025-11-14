@@ -8,3 +8,7 @@ The workflow is designed to support: <br />
 ✔ Machine learning–based risk prediction <br />
 ✔ Dashboarding in Power BI and Streamlit <br />
 ✔ Scalable ETL suitable for production environments
+
+## 📌 1. Architecture Overview
+
+**Data Sources → ETL Pipeline → Feature Store → ML Modeling → Analytics Layer → Dashboards**
