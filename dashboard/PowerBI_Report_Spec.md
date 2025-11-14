@@ -111,3 +111,38 @@ NetCalories = SUM(Features[net_calories])
 ProteinPct = DIVIDE(SUM(Nutrition[protein]), SUM(Nutrition[protein] + Nutrition[carbs] + Nutrition[fat]))
 
 ```
+**Interactions:** Clicking an SKU/food filters Wellness and Activity pages to show downstream effects.
+
+## 3️⃣ Fitness Activity
+
+**Goal:** Measure activity volume & intensity and its effect on wellness.
+
+**KPIs:**
+
+- **Avg Steps per Day**
+
+- **Workout Frequency (sessions per week)**
+
+- **Avg Calories Burned per Workout**
+
+**Visuals:**
+
+- Heatmap: Steps by day-of-week vs hour (if timestamps available).
+
+- Bar chart: Workout types by frequency & avg duration.
+
+- Scatter: Activity Score vs Wellness Score (per user).
+
+**DAX Examples:**
+
+```DAX
+WorkoutCount = COUNTROWS(Activity)
+
+AvgCaloriesBurned = AVERAGE(Activity[calories_burned])
+
+WorkoutFrequencyPerWeek = 
+DIVIDE(
+  COUNTROWS(Activity),
+  DISTINCTCOUNT(Date[week])
+)
+```
