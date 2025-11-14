@@ -89,3 +89,23 @@ Nutrition_Fitness_Analytics/
 | stress_level | Self-reported scale (0–10) | <br />
 | weight | Daily/weekly weight logs |
 
+## 🛠 Tech Stack
+**Languages**
+
+- Python (pandas, numpy, scikit-learn, seaborn, matplotlib)
+
+- DAX (Power BI)
+
+- SQL (for transformation queries)
+
+**Tools**
+
+- **Power BI** → Dashboard + KPI reporting
+
+- **Streamlit** → Health insights web app
+
+- **Scikit-learn** → Predictive modeling
+
+- **Plotly** → Interactive wellness visualizations
+
+  
