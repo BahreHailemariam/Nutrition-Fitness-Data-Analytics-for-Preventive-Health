@@ -1,0 +1,5 @@
+date,user_id,food_item,calories,protein,carbs,fat,meal_type,steps,workout_type,duration_min,calories_burned,sleep_hours,heart_rate,stress_level,weight
+2025-10-01,1,Oatmeal,300,8,50,6,Breakfast,8000,Cardio,30,250,7.5,60,3,70.5
+2025-10-01,1,Chicken Salad,450,35,20,20,Lunch,8000,Cardio,30,250,7.5,60,3,70.5
+2025-10-02,2,Protein Shake,200,20,10,5,Breakfast,4000,Strength,45,300,6.5,65,5,82.0
+2025-10-02,1,Steak,700,60,5,45,Dinner,10000,HIIT,20,400,8.0,58,2,70.0
