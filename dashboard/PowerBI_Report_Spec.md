@@ -67,3 +67,14 @@ Preferably stored in a data warehouse or as refreshable CSV/Parquet for Power BI
 - Small map or cohort breakdown (if geo available).
 
 **DAX Examples:**
+```DAX
+AvgWellness = AVERAGE(Features[wellness_score])
+
+PctFatigueRisk = 
+DIVIDE(
+  COUNTROWS(FILTER(ModelPredictions, ModelPredictions[fatigue_risk] = 1)),
+  COUNTROWS(ModelPredictions)
+)
+
+AvgDailySteps = AVERAGE(Activity[steps])
+```
