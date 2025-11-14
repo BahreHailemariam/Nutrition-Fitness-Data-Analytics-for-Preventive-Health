@@ -228,3 +228,27 @@ AVERAGEX(
 )
 
 ```
+
+## 7️⃣ Anomaly & Trends
+
+**Goal:** Detect sudden deviations (e.g., sharp drops in wellness or spikes in stress).
+
+**Triggers & Visuals:**
+
+- Alerts tile: list of anomalies (e.g., wellness drop > 15% week-over-week).
+
+- Line + anomaly markers: wellness trend with flagged dates.
+
+- Word cloud or keyword heatmap for textual journal entries (if available) around anomaly windows.
+
+**DAX Example (simple drop detection):**
+
+```DAX
+
+Wellness_WoW_Change =
+DIVIDE(
+  [AvgWellness] - CALCULATE([AvgWellness], DATEADD(Date[date], -7, DAY)),
+  CALCULATE([AvgWellness], DATEADD(Date[date], -7, DAY))
+)
+
+```
