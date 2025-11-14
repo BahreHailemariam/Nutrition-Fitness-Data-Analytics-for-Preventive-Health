@@ -257,9 +257,9 @@ DIVIDE(
 
 - Use a star schema:
 
-     - Central fact tables: `NutritionFact, ActivityFact, SleepFact, BiometricsFact, FeaturesFact, PredictionsFact`
+     - Central fact tables: `NutritionFact`, `ActivityFact`, `SleepFact`, `BiometricsFact`, `FeaturesFact`, `PredictionsFact`
 
-     - Dimension tables: `Date, User, MealType, WorkoutType, Location` (if available)
+     - Dimension tables: `Date`, `User`, `MealType`, `WorkoutType`, `Location` (if available)
 
 - Pre-aggregate daily KPIs into a `DailyMetrics` table for heavy visuals.
 
@@ -280,5 +280,23 @@ DIVIDE(
      - Limit top N visuals and use slicers to reduce cardinality.
 
      - Optimize DAX measures (prefer measures over calculated columns when dynamic).
+
+## 🔐 Security & Deployment
+
+- Implement **Row-Level Security (RLS)** to limit users to their own data (user_id-based filters) — especially important for health data.
+
+- Use Power BI Service for scheduled refresh and data alerts.
+
+- Consider data anonymization or hashing of PII before uploading to Power BI.
+
+## 🧩 UX & Interaction Guidelines
+
+- Global filter bar: Date Range, User, Cohort, MealType, WorkoutType.
+
+- Drill-through: Allow drill-through from weekly summary to daily entries and to individual raw reviews/notes.
+
+- Bookmarks: Create “Executive Summary”, “Coach View”, and “User View” bookmarks for quick access.
+
+- Mobile layout: a condensed card-only page (Wellness Score + Top 3 KPIs).
 
   
