@@ -175,3 +175,29 @@ AvgSleepHours = AVERAGE(Sleep[sleep_hours])
 AvgSleepScore = AVERAGE(Features[sleep_score])
 
 ```
+
+## 5️⃣ Health Risk Modeling
+
+**Goal:** Present model predictions (e.g., fatigue risk), calibration, and explainability.
+
+**Contents / Visuals:**
+
+- **Risk Distribution:** Histogram of prediction probabilities per risk label.
+
+- **Cohort Drill-Down:** Top N users flagged as high risk with recent metrics.
+
+- **SHAP / Feature Importance:** Bar chart of most influential features for model predictions (pre-computed and exported as table).
+
+- **Confusion Matrix & Performance:** Show precision/recall if labeled test data available.
+
+- **Threshold Controls:** What-if slider to adjust decision threshold and view count of flagged users.
+
+**DAX Examples:**
+
+```DAX
+
+AvgFatigueProb = AVERAGE(ModelPredictions[fatigue_probability])
+
+FatigueRiskCount = COUNTROWS(FILTER(ModelPredictions, ModelPredictions[fatigue_probability] >= 0.7))
+
+```
