@@ -252,3 +252,18 @@ DIVIDE(
 )
 
 ```
+
+## 📦 Data Model Recommendations
+
+- Use a star schema:
+
+     - Central fact tables: `NutritionFact, ActivityFact, SleepFact, BiometricsFact, FeaturesFact, PredictionsFact`
+
+     - Dimension tables: `Date, User, MealType, WorkoutType, Location` (if available)
+
+- Pre-aggregate daily KPIs into a `DailyMetrics` table for heavy visuals.
+
+- Store model artifacts/SHAP outputs as separate tables for the Risk Modeling page.
+
+- Prefer numeric surrogate keys for joins; avoid text-only joins in visuals.
+
