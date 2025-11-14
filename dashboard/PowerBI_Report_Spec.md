@@ -37,3 +37,33 @@
 - `Date dimension` (date, year, month, week, weekday)
 
 Preferably stored in a data warehouse or as refreshable CSV/Parquet for Power BI.
+
+## 1️⃣ Overview
+
+**Goal:** High-level summary for executives — overall population wellness, trends, and top risk flags.
+
+**KPIs (cards):**
+
+- **Avg Wellness Score** — average of `wellness_score` across selected users/time.
+
+- **% At-Risk (Fatigue)** — proportion with `fatigue_risk = 1`.
+
+- **Avg Daily Steps** — mean steps per day.
+
+- **Avg Sleep Hours** — mean sleep_hours.
+
+- **Weight Trend** — delta in average weight vs prior period.
+
+**Visuals:**
+
+- KPI cards across top ribbon.
+
+- Line chart: Avg Wellness Score trend (date).
+
+- Bar chart: Distribution of Wellness Score buckets (0–1).
+
+- Top 5 risk drivers table (feature importance from model).
+
+- Small map or cohort breakdown (if geo available).
+
+**DAX Examples:**
